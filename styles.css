@@ -1,12 +1,14 @@
 body {
   background-color: #f7f5f5;
-;
+  ;
 }
+
 h1 {
   color: #1fd228;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 p1 {
   color: red;
   display: flex;
@@ -14,9 +16,9 @@ p1 {
 }
 
 .sok-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -27,7 +29,7 @@ button {
 
 .text1 {
   display: flex;
-  
+
 }
 
 .menybar ul {
@@ -53,4 +55,99 @@ button {
 
 .menybar a:hover {
   background-color: #38be20;
+}
+
+/*category*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cacac7;
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  width: 620px;
+  height: 620px;
+  margin: 40px auto;
+}
+
+.grid-2x2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grid-2x2 img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-2x2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.grid-2x2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.grid-2x2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* biggie container*/
+.biggie {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biggie img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0px 0;
+
+}
+
+
+.grid-2x2 {
+  width: 620px;
+  height: 620px;
+
 }
