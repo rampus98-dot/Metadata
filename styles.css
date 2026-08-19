@@ -162,7 +162,7 @@ footer {
     color: #333;
     padding: 40px 20px;
     border-top: 1px solid #ddd;
-    margin-top: 160px;
+    margin-top: 90px;
 }
  
 .footer-container {
@@ -286,3 +286,4 @@ africa-page {
 .grid-2x2 {
   width: 620px;
   height: 620px;
+}
