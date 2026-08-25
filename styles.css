@@ -23,8 +23,8 @@ header {
   z-index: 1000;
 }
 
-.logo img {
-  width: 330px;
+.header-logo {
+  width: 340px;
   height: 100px;
   display: block;
 }
@@ -43,14 +43,14 @@ nav a {
 }
 
 
-.shop-button {
+.button {
   background-color: #ed7108;
 
   padding: 13px 25px;
   border-radius: 7px;
 }
 
-.shop-button:hover {
+.button:hover {
   background-color: #d86200;
 }
 
@@ -106,6 +106,7 @@ nav a {
 
 .continents {
   padding: 28px 5%;
+  display: block;
 }
 
 .continents h2 {
@@ -159,38 +160,38 @@ nav a {
   color: white;
 }
 
-
-
 footer {
     background-color: #f3f1ed;
     color: #333;
     padding: 55px 20px 25px;
     border-top: 1px solid #ddd;
-    margin-top: 90px;
-}
 
-.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 50px;
-    max-width: 1100px;
-    margin: 0 auto;
+
+    max-width: 100%;
+    margin: 100px auto;
 }
 
 .footer-column {
     flex: 1 1 250px;
+    display: block;
+    margin-left: 250px;
 }
 
-.footer-column h3 {
+/* Rubrikerna */
+.footer-column h2 {
     font-size: 1.15rem;
+    margin-top: 0;
     margin-bottom: 20px;
     font-family: Georgia, serif;
     color: #222;
     position: relative;
 }
 
-.footer-column h3::after {
+/* Linjen under rubriken */
+.footer-column h2::after {
     content: "";
     display: block;
     width: 35px;
@@ -199,16 +200,19 @@ footer {
     margin-top: 8px;
 }
 
+/* Listorna */
 .footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Avstånd mellan länkarna */
 .footer-column li {
     margin-bottom: 12px;
 }
 
+/* Länkarna */
 .footer-column a {
     color: #555;
     text-decoration: none;
@@ -221,15 +225,18 @@ footer {
     padding-left: 5px;
 }
 
+/* Texten längst ner */
 .footer-bottom {
-    max-width: 1100px;
-    margin: 45px auto 0;
-    padding-top: 20px;
+    width: 68%;
+    margin: 25px auto 0;
+    padding-top: 10px;
     border-top: 1px solid #d8d5d0;
+
     text-align: center;
     font-size: 0.85rem;
     color: #777;
 }
+
 
 /*category*/
 * {
