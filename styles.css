@@ -56,51 +56,49 @@ nav a {
 
 
 .storbild1 {
-  height: 365px;
-
-  background-image: url("images/logo/mat2.jpg");
-  background-size: cover;
-  background-position: center;
-
-  position: relative;
+    height: 365px;
+    position: relative;
+    overflow: hidden;
 }
 
+.storbild1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
 
+/* Mörk ton ovanpå bilden */
 .storbild1::before {
-  content: "";
-
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.25);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 .storbild1-text {
-  position: absolute;
-
-  left: 60px;
-  top: 90px;
-
-  color: white;
+    position: absolute;
+    left: 60px;
+    top: 90px;
+    color: white;
+    z-index: 2;
 }
 
 .storbild1-text h1 {
-  font-family: Georgia, serif;
-
-  font-size: 52px;
-  line-height: 1.05;
-
-  margin: 0 0 20px 0;
+    font-family: Georgia, serif;
+    font-size: 52px;
+    line-height: 1.05;
+    margin: 0 0 20px 0;
 }
 
 .storbild1-text p {
-  font-size: 22px;
-  margin: 0;
+    font-size: 22px;
+    margin: 0;
 }
 
 
@@ -233,7 +231,7 @@ footer {
     border-top: 1px solid #d8d5d0;
 
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 14px;
     color: #777;
 }
 
@@ -252,14 +250,6 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-africa-page {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #cacac7;
 }
 
 .grid-2x2 {
@@ -576,78 +566,4 @@ africa-page {
 
 .product-meta dd {
     margin: 0;
-}
-
-
-/* -------------------- RESPONSIV -------------------- */
-
-@media (max-width: 900px) {
-
-    .product-container {
-        flex-direction: column;
-
-        padding: 30px;
-    }
-
-    .product-image {
-        width: 100%;
-        max-height: 400px;
-
-        object-fit: cover;
-    }
-
-
-    .product-info h3 {
-        font-size: 1.8rem;
-    }
-
-    .price {
-        font-size: 2.2rem;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .product-page {
-        padding: 15px 4%;
-    }
-
-    .product-page > h1 {
-        font-size: 40px;
-    }
-
-    .continent-section > .sortiment-logo {
-        width: 190px;    }
-
-
-    .continent-section > h2 {
-        font-size: 23px;
-    }
-
-    .continent-description {
-        font-size: 16px;
-        margin-bottom: 35px;
-    }
-
-    .product-container {
-        padding: 20px;
-        gap: 25px;
-    }
-
-    .order-section {
-        align-items: stretch;
-    }
-
-    .buy-button {
-        width: 100%;
-        text-align: center;
-    }
-
-
-    .product-meta {
-        grid-template-columns: max-content 1fr;
-    }
-  
 }
