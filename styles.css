@@ -235,6 +235,15 @@ footer {
     color: #777;
 }
 
+.categorytext-h1 {
+    text-align: center;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #111;
+    margin-top: 15px;
+}
+
 
 /*category*/
 * {
@@ -279,6 +288,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 500px;
 }
 
 .biggie img {
