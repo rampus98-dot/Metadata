@@ -2,7 +2,7 @@
 <html lang="sv">
 
 <head>
-    
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -20,7 +20,7 @@
     <title>Vårt sortiment | Köttmötet</title>
 
     <link rel="stylesheet" href="../styles.css">
-    
+
 </head>
 
 <body>
@@ -32,11 +32,7 @@
 
     <header>
 
-        <img
-            src="../images/logo/logo1.png"
-            alt="Köttmötet"
-            class="header-logo"
-        >
+        <img src="../images/logo/logo1.png" alt="Köttmötet" class="header-logo">
 
         <nav>
             <a href="../index.html">HEM</a>
@@ -57,11 +53,7 @@
 
         <section class="continent-section">
 
-            <img
-                class="sortiment-logo"
-                src="../images/products/sortiment_logo.png"
-                alt=""
-            >
+            <img class="sortiment-logo" src="../images/products/sortiment_logo.png" alt="">
 
             <h2>Kött från Afrika</h2>
 
@@ -72,35 +64,37 @@
 
             <!-- Kudu -->
 
-            <article class="product-container">
+            <article class="product-container" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/africa/africa_product_page_kudu.png"
-                    alt="Kudukött"
-                >
+                <img class="product-image" src="../images/products/africa/africa_product_page_kudu.png" alt="Kudukött">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, AFRIKANSKT
                     </p>
 
-                    <h3>Kudukött</h3>
+                    <h3 itemprop="name">Kudukött</h3>
 
                     <p class="origin">
                         Ursprung: Sydafrika
                     </p>
 
-                    <p class="price">
-                        249:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        249 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">249</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            249 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Mört och smakrikt viltkött av kudu från Sydafrika.
                         Köttet är magert och har en fyllig viltsmak.
                         Passar utmärkt att grilla, steka eller tillaga varsamt
@@ -115,13 +109,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-kudu"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-kudu" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-kudu" data-price="249">
                             Lägg i varukorgen
@@ -133,7 +121,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>African Meats</dd>
+                        <dd itemprop="brand">African Meats</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -150,35 +138,38 @@
 
             <!-- Vattenbuffel -->
 
-            <article class="product-container" id="water-buffalo_card">
+            <article class="product-container" id="water-buffalo_card" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/africa/africa_product_page_buffalo.png"
-                    alt="Vattenbuffel"
-                >
+                <img class="product-image" src="../images/products/africa/africa_product_page_buffalo.png"
+                    alt="Vattenbuffel">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, AFRIKANSKT
                     </p>
 
-                    <h3>Vattenbuffel</h3>
+                    <h3 itemprop="name">Vattenbuffel</h3>
 
                     <p class="origin">
                         Ursprung: Centralafrika
                     </p>
 
-                    <p class="price">
-                        399:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        399 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">399</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            399 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Fylligt, mörkt kött med kraftig smak och tydlig umami.
                         Mindre "vilt" än europeiskt vilt, mer åt mustig nöt.
                         Passar utmärkt till långkok, grytor och BBQ.
@@ -192,13 +183,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-water-buffalo"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-water-buffalo" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-water-buffalo" data-price="399">
                             Lägg i varukorgen
@@ -210,7 +195,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>African Meats</dd>
+                        <dd itemprop="brand">African Meats</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -227,35 +212,38 @@
 
             <!-- Struts -->
 
-            <article class="product-container" id="ostrich_card">
+            <article class="product-container" id="ostrich_card" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/africa/africa_product_page_ostrich.png"
-                    alt="Strutskött"
-                >
+                <img class="product-image" src="../images/products/africa/africa_product_page_ostrich.png"
+                    alt="Strutskött">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, AFRIKANSKT
                     </p>
 
-                    <h3>Struts</h3>
+                    <h3 itemprop="name">Struts</h3>
 
                     <p class="origin">
                         Ursprung: Centralafrika, Sydafrika
                     </p>
 
-                    <p class="price">
-                        449:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        449 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">449</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            449 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Mört och magert kött med ren, mild viltsmak och en ton av sötma.
                         Liknar en blandning av nöt och kalv men med djupare arom.
                         Perfekt att grilla eller steka snabbt på hög värme.
@@ -269,13 +257,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-ostrich"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-ostrich" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-ostrich" data-price="449">
                             Lägg i varukorgen
@@ -287,7 +269,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>African Meats</dd>
+                        <dd itemprop="brand">African Meats</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -304,35 +286,38 @@
 
             <!-- Zebra -->
 
-            <article class="product-container" id="zebra_card">
+            <article class="product-container" id="zebra_card" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/africa/africa_product_page_zebra.png"
-                    alt="Zebrakött"
-                >
+                <img class="product-image" src="../images/products/africa/africa_product_page_zebra.png"
+                    alt="Zebrakött">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, AFRIKANSKT
                     </p>
 
-                    <h3>Zebra</h3>
+                    <h3 itemprop="name">Zebra</h3>
 
                     <p class="origin">
                         Ursprung: Centralafrika, Sydafrika
                     </p>
 
-                    <p class="price">
-                        549:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        549 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">549</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            549 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Magert och smakrikt kött med tydlig viltsmak och en lätt sötma.
                         Liknar hästkött men är mer aromatiskt.
                         Bäst att steka eller grilla medium rare.
@@ -346,13 +331,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-zebra"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-zebra" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-zebra" data-price="549">
                             Lägg i varukorgen
@@ -364,7 +343,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>African Meats</dd>
+                        <dd itemprop="brand">African Meats</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -386,11 +365,7 @@
 
         <section class="continent-section">
 
-            <img
-                class="sortiment-logo"
-                src="../images/products/sortiment_logo.png"
-                alt=""
-            >
+            <img class="sortiment-logo" src="../images/products/sortiment_logo.png" alt="">
 
             <h2>Kött från Asien</h2>
 
@@ -401,35 +376,37 @@
 
             <!-- Orm -->
 
-            <article class="product-container" id="snake_card">
+            <article class="product-container" id="snake_card" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/asia/asia_product_page_snake.png"
-                    alt="Ormkött"
-                >
+                <img class="product-image" src="../images/products/asia/asia_product_page_snake.png" alt="Ormkött">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, ASIATISKT
                     </p>
 
-                    <h3>Orm</h3>
+                    <h3 itemprop="name">Orm</h3>
 
                     <p class="origin">
                         Ursprung: Asien
                     </p>
 
-                    <p class="price">
-                        299:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        299 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">299</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            299 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Fast, vitt kött med mild smak som påminner om kyckling
                         men med en lätt metallisk ton.
                         Passar bra i wok, soppor eller grillspett.
@@ -443,13 +420,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-snake"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-snake" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-snake" data-price="299">
                             Lägg i varukorgen
@@ -461,7 +432,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>Asian Snake Farm</dd>
+                        <dd itemprop="brand">Asian Snake Farm</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -478,35 +449,38 @@
 
             <!-- Sköldpadda -->
 
-            <article class="product-container" id="turtle_card">
+            <article class="product-container" id="turtle_card" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/asia/asia_product_page_turtle.png"
-                    alt="Sköldpaddskött"
-                >
+                <img class="product-image" src="../images/products/asia/asia_product_page_turtle.png"
+                    alt="Sköldpaddskött">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, ASIATISKT
                     </p>
 
-                    <h3>Sköldpadda</h3>
+                    <h3 itemprop="name">Sköldpadda</h3>
 
                     <p class="origin">
                         Ursprung: Sydasien
                     </p>
 
-                    <p class="price">
-                        449:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        449 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">449</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            449 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Gelatinrikt kött med djup, fyllig smak, ofta beskrivet
                         som en blandning av kyckling, fisk och kalv.
                         Vanligt i långkok, buljonger och curryrätter.
@@ -520,13 +494,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-turtle"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-turtle" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-turtle" data-price="449">
                             Lägg i varukorgen
@@ -538,7 +506,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>Asien Meats Express</dd>
+                        <dd itemprop="brand">Asien Meats Express</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -555,35 +523,37 @@
 
             <!-- Yak -->
 
-            <article class="product-container" id="yak_card">
+            <article class="product-container" id="yak_card" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/asia/asia_product_page_yak.png"
-                    alt="Yakkött"
-                >
+                <img class="product-image" src="../images/products/asia/asia_product_page_yak.png" alt="Yakkött">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, ASIATISKT
                     </p>
 
-                    <h3>Yak</h3>
+                    <h3 itemprop="name">Yak</h3>
 
                     <p class="origin">
                         Ursprung: Asien
                     </p>
 
-                    <p class="price">
-                        389:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        389 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">389</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            389 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Mört, mörkt kött med ren och elegant smak,
                         liknande en blandning av nöt och ren.
                         Lätt sötma och hög saftighet.
@@ -598,13 +568,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-yak"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-yak" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-yak" data-price="389">
                             Lägg i varukorgen
@@ -616,7 +580,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>Asien Meats Express</dd>
+                        <dd itemprop="brand">Asien Meats Express</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -633,35 +597,37 @@
 
             <!-- Skorpion -->
 
-            <article class="product-container" id="scorpion_card">
+            <article class="product-container" id="scorpion_card" itemscope itemtype="https://schema.org/Product">
 
-                <img
-                    class="product-image"
-                    src="../images/products/asia/asia_product_page_scorpion.png"
-                    alt="Skorpion"
-                >
+                <img class="product-image" src="../images/products/asia/asia_product_page_scorpion.png" alt="Skorpion">
 
                 <div class="product-info">
 
-                    <p class="category">
+                    <p class="category" itemprop="category">
                         KÖTT, VILTKÖTT, ASIATISKT
                     </p>
 
-                    <h3>Skorpion</h3>
+                    <h3 itemprop="name">Skorpion</h3>
 
                     <p class="origin">
                         Ursprung: Asien
                     </p>
 
-                    <p class="price">
-                        549:-
-                    </p>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 
-                    <p class="price-per-kg">
-                        549 kr/kg
-                    </p>
+                        <p class="price">
+                            <span itemprop="price">549</span>:-
+                        </p>
 
-                    <p class="description">
+                        <p class="price-per-kg">
+                            549 kr/kg
+                        </p>
+
+                        <meta itemprop="priceCurrency" content="SEK">
+
+                    </div>
+
+                    <p class="description" itemprop="description">
                         Lätt nötighet och mild umami.
                         Vanligt som snacks eller friterat.
                         Serveras bäst med chili, lime eller som topping på risrätter.
@@ -675,13 +641,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-scorpion"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-scorpion" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-scorpion" data-price="549">
                             Lägg i varukorgen
@@ -693,7 +653,7 @@
                     <dl class="product-meta">
 
                         <dt>Producent:</dt>
-                        <dd>Asien Meats Express</dd>
+                        <dd itemprop="brand">Asien Meats Express</dd>
 
                         <dt>Förpackning:</dt>
                         <dd>Vakuumförpackad</dd>
@@ -715,11 +675,7 @@
 
         <section class="continent-section">
 
-            <img
-                class="sortiment-logo"
-                src="../images/products/sortiment_logo.png"
-                alt=""
-            >
+            <img class="sortiment-logo" src="../images/products/sortiment_logo.png" alt="">
 
             <h2>Kött från Oceanien</h2>
 
@@ -732,11 +688,8 @@
 
             <article class="product-container" id="buffalo_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/oceania/oceania_product_page_buffalo.png"
-                    alt="Buffelkött"
-                >
+                <img class="product-image" src="../images/products/oceania/oceania_product_page_buffalo.png"
+                    alt="Buffelkött">
 
                 <div class="product-info">
 
@@ -772,13 +725,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-buffalo-oceania"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-buffalo-oceania" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-buffalo" data-price="249">
                             Lägg i varukorgen
@@ -809,11 +756,8 @@
 
             <article class="product-container" id="crocodile_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/oceania/oceania_product_page_crocodile.png"
-                    alt="Krokodilkött"
-                >
+                <img class="product-image" src="../images/products/oceania/oceania_product_page_crocodile.png"
+                    alt="Krokodilkött">
 
                 <div class="product-info">
 
@@ -848,13 +792,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-crocodile"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-crocodile" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-crocodile" data-price="359">
                             Lägg i varukorgen
@@ -885,11 +823,7 @@
 
             <article class="product-container" id="emu_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/oceania/oceania_product_page_emu.png"
-                    alt="Emukött"
-                >
+                <img class="product-image" src="../images/products/oceania/oceania_product_page_emu.png" alt="Emukött">
 
                 <div class="product-info">
 
@@ -926,13 +860,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-emu"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-emu" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-emu" data-price="539">
                             Lägg i varukorgen
@@ -963,11 +891,8 @@
 
             <article class="product-container" id="kangaroo_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/oceania/oceania_product_page_kangaroo.png"
-                    alt="Kängurukött"
-                >
+                <img class="product-image" src="../images/products/oceania/oceania_product_page_kangaroo.png"
+                    alt="Kängurukött">
 
                 <div class="product-info">
 
@@ -1002,13 +927,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-kangaroo"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-kangaroo" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-kangaroo" data-price="279">
                             Lägg i varukorgen
@@ -1042,11 +961,7 @@
 
         <section class="continent-section">
 
-            <img
-                class="sortiment-logo"
-                src="../images/products/sortiment_logo.png"
-                alt=""
-            >
+            <img class="sortiment-logo" src="../images/products/sortiment_logo.png" alt="">
 
             <h2>Kött från Sydamerika</h2>
 
@@ -1059,11 +974,8 @@
 
             <article class="product-container" id="caiman_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/southamerica/southamerica_product_page_caiman.png"
-                    alt="Kaimankött"
-                >
+                <img class="product-image" src="../images/products/southamerica/southamerica_product_page_caiman.png"
+                    alt="Kaimankött">
 
                 <div class="product-info">
 
@@ -1100,13 +1012,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-caiman"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-caiman" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-caiman" data-price="369">
                             Lägg i varukorgen
@@ -1137,11 +1043,8 @@
 
             <article class="product-container" id="guinea-pig_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/southamerica/southamerica_product_page_guinea_pig.png"
-                    alt="Marsvinskött"
-                >
+                <img class="product-image"
+                    src="../images/products/southamerica/southamerica_product_page_guinea_pig.png" alt="Marsvinskött">
 
                 <div class="product-info">
 
@@ -1177,13 +1080,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-guinea-pig"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-guinea-pig" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-guinea-pig" data-price="129">
                             Lägg i varukorgen
@@ -1214,11 +1111,8 @@
 
             <article class="product-container" id="llama_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/southamerica/southamerica_product_page_llama.png"
-                    alt="Lamakött"
-                >
+                <img class="product-image" src="../images/products/southamerica/southamerica_product_page_llama.png"
+                    alt="Lamakött">
 
                 <div class="product-info">
 
@@ -1255,13 +1149,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-llama"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-llama" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-llama" data-price="449">
                             Lägg i varukorgen
@@ -1292,11 +1180,8 @@
 
             <article class="product-container" id="alpaca_card">
 
-                <img
-                    class="product-image"
-                    src="../images/products/southamerica/southamerica_product_page_alpaca.png"
-                    alt="Alpackakött"
-                >
+                <img class="product-image" src="../images/products/southamerica/southamerica_product_page_alpaca.png"
+                    alt="Alpackakött">
 
                 <div class="product-info">
 
@@ -1333,13 +1218,7 @@
                             Mängd (kg)
                         </label>
 
-                        <input
-                            type="number"
-                            id="quantity-alpaca"
-                            value="1"
-                            min="0.5"
-                            step="0.5"
-                        >
+                        <input type="number" id="quantity-alpaca" value="1" min="0.5" step="0.5">
 
                         <button type="button" class="buy-button" id="buy-alpaca" data-price="489">
                             Lägg i varukorgen
@@ -1369,29 +1248,29 @@
 
     </main>
 
-<footer>
+    <footer>
 
-    <nav class="footer-column">
-        <h2>Beställ & Handla</h2>
-        <ul>
-            <li><a href="#">Leveranstid, betalning och frakt</a></li>
-            <li><a href="#">Retur, ångerrätt och reklamation</a></li>
-            <li><a href="#">Ångra ditt onlineköp</a></li>
-        </ul>
-    </nav>
+        <nav class="footer-column">
+            <h2>Beställ & Handla</h2>
+            <ul>
+                <li><a href="#">Leveranstid, betalning och frakt</a></li>
+                <li><a href="#">Retur, ångerrätt och reklamation</a></li>
+                <li><a href="#">Ångra ditt onlineköp</a></li>
+            </ul>
+        </nav>
 
-    <nav class="footer-column">
-        <h2>Kontakt</h2>
-        <ul>
-            <li><a href="#">Om oss</a></li>
-            <li><a href="#">Vanliga frågor</a></li>
-            <li><a href="#">Kontakta oss</a></li>
-        </ul>
-    </nav>
+        <nav class="footer-column">
+            <h2>Kontakt</h2>
+            <ul>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Vanliga frågor</a></li>
+                <li><a href="#">Kontakta oss</a></li>
+            </ul>
+        </nav>
 
-    <p class="footer-bottom">2026 Köttmötet - Exotiskt kött från hela världen</p>
+        <p class="footer-bottom">2026 Köttmötet - Exotiskt kött från hela världen</p>
 
-</footer>
+    </footer>
 </body>
 
 </html>
