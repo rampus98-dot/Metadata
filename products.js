@@ -40,7 +40,7 @@ const form_to_items = {
         price: 549
     },
 
-     "form_snake": {
+    "form_snake": {
         item_id: "SNAKE001",
         item_name: "Orm",
         item_brand: "Asian Snake Farm",
@@ -80,7 +80,7 @@ const form_to_items = {
         price: 549
     },
 
-    
+
     "form_buffel": {
         item_id: "buffel001",
         item_name: "Buffel",
@@ -91,7 +91,7 @@ const form_to_items = {
         price: 249
     },
 
-    
+
     "form_crocodile": {
         item_id: "CROCODILE001",
         item_name: "Krokodil",
@@ -123,11 +123,11 @@ const form_to_items = {
     },
 
     "form_kaiman": {
-        item_id: "KANGAROO001",
+        item_id: "KAIMAN001",
         item_name: "Kaiman",
         item_brand: "South America Exotic Meat",
         item_category: "Kött",
-        item_category2: "Oceanien",
+        item_category2: "Sydamerika",
         item_variant: "1 kg",
         price: 369
     },
@@ -137,7 +137,7 @@ const form_to_items = {
         item_name: "Marsvin",
         item_brand: "South America Exotic Meat",
         item_category: "Kött",
-        item_category2: "Oceanien",
+        item_category2: "Sydamerika",
         item_variant: "1 kg",
         price: 129
     },
@@ -147,7 +147,7 @@ const form_to_items = {
         item_name: "Lama",
         item_brand: "South America Exotic Meat",
         item_category: "Kött",
-        item_category2: "Oceanien",
+        item_category2: "Sydamerika",
         item_variant: "1 kg",
         price: 449
     },
@@ -157,14 +157,13 @@ const form_to_items = {
         item_name: "Alpacka",
         item_brand: "South America Exotic Meat",
         item_category: "Kött",
-        item_category2: "Oceanien",
+        item_category2: "Sydamerika",
         item_variant: "1 kg",
         price: 489
     },
 }
-    
-function handle_purchase(event)
-{
+
+function handle_purchase(event) {
     event.preventDefault()
 
     const form = event.target
@@ -174,8 +173,7 @@ function handle_purchase(event)
 
     const quantity = parseFloat(data.get("quantity"))
 
-    if(item && quantity && quantity >= 0.5)
-    {
+    if (item && quantity && quantity >= 0.5) {
         const purchase_item = {
             ...item,
             quantity: quantity
@@ -189,7 +187,7 @@ function handle_purchase(event)
 
         ecommerce.value = purchase_item.quantity * purchase_item.price
 
-        dataLayer.push({ecommerce: null})
+        dataLayer.push({ ecommerce: null })
 
         dataLayer.push({
             event: "purchase",
@@ -199,10 +197,8 @@ function handle_purchase(event)
 }
 
 
-for(const form of document.forms)
-{
-    if(form.classList.contains("order-section"))
-    {
+for (const form of document.forms) {
+    if (form.classList.contains("order-section")) {
         form.onsubmit = handle_purchase
     }
 }
