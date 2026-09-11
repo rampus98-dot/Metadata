@@ -174,13 +174,14 @@ function handle_purchase(event) {
     const quantity = parseFloat(data.get("quantity"))
 
     if (item && quantity && quantity >= 0.5) {
+        
         const purchase_item = {
             ...item,
             quantity: quantity
         }
 
         const ecommerce = {
-            transaction_id: "T1",
+            transaction_id: "T" + Date.now(),
             currency: "SEK",
             items: [purchase_item]
         }
